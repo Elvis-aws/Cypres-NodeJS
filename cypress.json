@@ -1,1 +1,12 @@
-{}
+{
+    "integrationFolder":"cypress/Tests",
+    "fixturesFolder":"cypress/fixtures",
+    "pageLoadTimeout":100000,
+    "env": {
+    "url": "http://qa.loginapp.nsncareers.com/"
+    },
+    "projectId": "",
+    "defaultCommandTimeout":10000,
+    "videoUploadOnPasses":false,
+    "chromeWebSecurity":false
+}

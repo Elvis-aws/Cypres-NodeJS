@@ -49,3 +49,29 @@ Cypress automates but we need to wrap our tests in a testing framework
 Cypress recommends mocha as our testing framework
 describe is a test suit and can have numerous tests defined by the it block
 
+# Running tests
+In java script each test file is known as spec. To run all tests in a specific file
+Run all tests => ./node_modules/.bin/cypress run
+Run in head mode => ./node_modules/.bin/cypress run --headed
+Run in with specific browser => ./node_modules/.bin/cypress run --browser chrome
+Run spec file =  ./node_modules/.bin/cypress run -- --record --spec "cypress\integration\Tests\loginTest.js"
+
+# Project structure
+fixtures => store test data
+Intergration => store tests
+plugins => listenners e.g on event fail or browser start
+support => write re-usable methods
+
+# Update configuration
+Open your test runner
+Go to settings
+Copy the config to change and update the cypress.json file
+
+# git ignore
+Create a file named .gitignore in your project's directory. Ignore directories by entering the directory name into the file (with a slash appended):
+dir_to_ignore/
+
+
+# Intellisence
+Paste this in your node module
+/// <reference types="Cypress" />
